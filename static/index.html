@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryuu Social API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <div class="logo">◈</div>
+            <div>
+                <h1 id="appName">Ryuu Social API</h1>
+                <p id="appTagline">by <span id="devName">Ryuu</span> · generate & test API platform sosial</p>
+            </div>
+        </div>
+        <div class="meta">
+            <div class="base-url" id="baseUrl">memuat...</div>
+            <a class="dev-badge" id="devTiktok" href="#" target="_blank" rel="noopener">
+                <span class="dev-dot"></span>
+                <span id="devHandle">@ryuuwaguri</span>
+            </a>
+        </div>
+    </header>
+    <nav class="tabs">
+        <button class="tab active" data-platform="tiktok">TikTok</button>
+        <button class="tab" data-platform="instagram">Instagram</button>
+        <button class="tab" data-platform="x">X (Twitter)</button>
+        <button class="tab" data-platform="tracking">Tracking</button>
+    </nav>
+    <main id="content"></main>
+    <footer>
+        <span id="footerText">© Ryuu Social API</span>
+        <span class="sep">·</span>
+        <a id="footerContact" href="mailto:jafrisebat20@gmail.com">jafrisebat20@gmail.com</a>
+        <span class="sep">·</span>
+        <a id="footerTiktok" href="https://tiktok.com/@ryuu.ndivision" target="_blank" rel="noopener">@ryuu.ndivision</a>
+    </footer>
+    <div class="modal" id="modal">
+        <div class="modal-box">
+            <div class="modal-head">
+                <h2 id="modalTitle">Test API</h2>
+                <button id="modalClose">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="request-line" id="requestLine"></div>
+                <label id="paramLabel">Parameter</label>
+                <input type="text" id="paramInput" placeholder="Masukkan nilai...">
+                <button id="runBtn">Jalankan</button>
+                <pre id="result"></pre>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
